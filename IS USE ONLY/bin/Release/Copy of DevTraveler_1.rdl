@@ -1,0 +1,3908 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Textbox Name="Textbox41">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!OtherFinish.Value, "WIPS_OrderObject") &amp; " - " &amp; LOOKUP(TRIM(First(Fields!OtherFinish.Value, "WIPS_OrderObject")),Fields!FNRF_FinishCode.Value,Fields!FNRF_Description.Value, "WIPS_FINISHCODE_REF")</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>4.47223in</Top>
+        <Left>1.69125in</Left>
+        <Height>0.25in</Height>
+        <Width>3.41305in</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox42">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!SideFinish.Value, "WIPS_OrderObject") &amp; " - " &amp; LOOKUP(TRIM(First(Fields!SideFinish.Value, "WIPS_OrderObject")),Fields!FNRF_FinishCode.Value,Fields!FNRF_Description.Value, "WIPS_FINISHCODE_REF")</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>4.20834in</Top>
+        <Left>1.69125in</Left>
+        <Height>0.25in</Height>
+        <Width>3.41305in</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox43">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!DoorFinish.Value, "WIPS_OrderObject") &amp; " - " &amp; LOOKUP(TRIM(First(Fields!DoorFinish.Value, "WIPS_OrderObject")),Fields!FNRF_FinishCode.Value,Fields!FNRF_Description.Value, "WIPS_FINISHCODE_REF")</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>3.91668in</Top>
+        <Left>1.69125in</Left>
+        <Height>0.25in</Height>
+        <Width>3.41305in</Width>
+        <ZIndex>2</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox44">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!CabConstr.Value, "WIPS_OrderObject") &amp; " - " &amp; LOOKUP(TRIM(First(Fields!CabConstr.Value, "WIPS_OrderObject")),Fields!ConstrCode.Value,Fields!ConstrCodeDescription.Value, "CABCONSTCD")</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>3.50697in</Top>
+        <Left>1.70521in</Left>
+        <Height>0.25in</Height>
+        <Width>2.04854in</Width>
+        <ZIndex>3</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox45">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!SideSpecie.Value, "WIPS_OrderObject") &amp; " - " &amp; LOOKUP(TRIM(First(Fields!SideSpecie.Value, "WIPS_OrderObject")),Fields!WoodCode.Value,Fields!WoodCodeDesc.Value, "WoodRef")</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>3.22919in</Top>
+        <Left>1.73299in</Left>
+        <Height>0.25in</Height>
+        <Width>2.04855in</Width>
+        <ZIndex>4</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox46">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!DoorSpecie.Value, "WIPS_OrderObject") &amp; " - " &amp; LOOKUP(TRIM(First(Fields!DoorSpecie.Value, "WIPS_OrderObject")),Fields!WoodCode.Value,Fields!WoodCodeDesc.Value, "WoodRef")</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>2.93753in</Top>
+        <Left>1.71903in</Left>
+        <Height>0.25in</Height>
+        <Width>2.04862in</Width>
+        <ZIndex>5</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox9">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=LEFT(Parameters!Order.Value + space(12), 12)&amp;Right("000" &amp; Parameters!ITEM.Value.ToString, 3)</Value>
+                <Style>
+                  <FontSize>18pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox9</rd:DefaultName>
+        <Top>0.43972in</Top>
+        <Left>4.75694in</Left>
+        <Height>0.21306in</Height>
+        <Width>2.45139in</Width>
+        <ZIndex>6</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox8">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox8</rd:DefaultName>
+        <Top>0.125in</Top>
+        <Left>4.75694in</Left>
+        <Height>0.31472in</Height>
+        <Width>2.45139in</Width>
+        <ZIndex>7</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Image Name="imgWMLogo">
+        <Source>Embedded</Source>
+        <Value>wmlogo</Value>
+        <Sizing>FitProportional</Sizing>
+        <Top>0.125in</Top>
+        <Left>0.1632in</Left>
+        <Height>0.69098in</Height>
+        <Width>1.77083in</Width>
+        <ZIndex>8</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Image>
+      <Textbox Name="Textbox3">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value EvaluationMode="Constant">Inspection Stamp</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>0.125in</Top>
+        <Left>7.41319in</Left>
+        <Height>9.52334in</Height>
+        <Width>0.87152in</Width>
+        <ZIndex>9</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+            <Width>2pt</Width>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox4">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>="*"&amp;LEFT(Parameters!Order.Value + space(12), 12)&amp;Right("000" &amp; Parameters!ITEM.Value.ToString, 3)&amp;"*"</Value>
+                <Style>
+                  <FontFamily>Free 3 of 9 Extended</FontFamily>
+                  <FontSize>34pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox4</rd:DefaultName>
+        <Top>9.23737in</Top>
+        <Left>0.21878in</Left>
+        <Height>0.54639in</Height>
+        <Width>4.23261in</Width>
+        <ZIndex>10</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox10">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=LEFT(Parameters!Order.Value + space(12), 12) &amp; Right("000" &amp; Parameters!ITEM.Value.ToString(), 3)</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox9</rd:DefaultName>
+        <Top>9.35195in</Top>
+        <Left>4.70138in</Left>
+        <Height>0.29639in</Height>
+        <Width>2.57292in</Width>
+        <ZIndex>11</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox6">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value EvaluationMode="Constant">CROSSOVER  :</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>0.88416in</Top>
+        <Left>0.16334in</Left>
+        <Height>0.25in</Height>
+        <Width>1.45833in</Width>
+        <ZIndex>12</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox7">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>DESIGN GROUP  :</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>1.16194in</Top>
+        <Left>0.1632in</Left>
+        <Height>0.25in</Height>
+        <Width>1.45833in</Width>
+        <ZIndex>13</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox11">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>ORDER NO  :</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>1.41194in</Top>
+        <Left>0.16327in</Left>
+        <Height>0.25in</Height>
+        <Width>1.45833in</Width>
+        <ZIndex>14</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox12">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>SHIP WEEK  :</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>1.68972in</Top>
+        <Left>0.16327in</Left>
+        <Height>0.25in</Height>
+        <Width>1.45833in</Width>
+        <ZIndex>15</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox13">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>ACCOUNT NO </Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>1.95361in</Top>
+        <Left>0.1632in</Left>
+        <Height>0.25in</Height>
+        <Width>1.45833in</Width>
+        <ZIndex>16</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox14">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>PART NUMBER:</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>0.88416in</Top>
+        <Left>3.5486in</Left>
+        <Height>0.25in</Height>
+        <Width>1.45833in</Width>
+        <ZIndex>17</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox15">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>DATE PRINTED  :</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>1.16194in</Top>
+        <Left>3.5486in</Left>
+        <Height>0.25in</Height>
+        <Width>1.45833in</Width>
+        <ZIndex>18</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox16">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>ITEM NO  :</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>1.42583in</Top>
+        <Left>3.5486in</Left>
+        <Height>0.25in</Height>
+        <Width>1.45833in</Width>
+        <ZIndex>19</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox17">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>JOB NAME  :</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>1.68972in</Top>
+        <Left>3.5486in</Left>
+        <Height>0.25in</Height>
+        <Width>1.45833in</Width>
+        <ZIndex>20</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox18">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>EDITOR</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>1.95361in</Top>
+        <Left>2.78818in</Left>
+        <Height>0.25in</Height>
+        <Width>1.45833in</Width>
+        <ZIndex>21</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox19">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value EvaluationMode="Constant">PAPER</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>1.9675in</Top>
+        <Left>5.5382in</Left>
+        <Height>0.25in</Height>
+        <Width>1.45833in</Width>
+        <ZIndex>22</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox20">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!XOverDesc.Value, "Items")</Value>
+                <Style>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>0.88416in</Top>
+        <Left>1.62158in</Left>
+        <Height>0.25in</Height>
+        <Width>1.45833in</Width>
+        <ZIndex>23</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox21">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!DesignGroup.Value, "Items")</Value>
+                <Style>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>1.16194in</Top>
+        <Left>1.62158in</Left>
+        <Height>0.25in</Height>
+        <Width>1.45833in</Width>
+        <ZIndex>24</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox22">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=TRIM(Parameters!Order.Value)</Value>
+                <Style>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>1.42583in</Top>
+        <Left>1.62158in</Left>
+        <Height>0.25in</Height>
+        <Width>1.45833in</Width>
+        <ZIndex>25</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox23">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Format(First(Fields!FirmShipDate.Value, "Items"), "MM/dd/yy") &amp; "   " &amp;  Right("00" &amp; First(Fields!FirmShipGroup.Value, "Items").ToString, 2)</Value>
+                <Style>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                  <Format>d</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>1.68972in</Top>
+        <Left>1.62158in</Left>
+        <Height>0.25in</Height>
+        <Width>1.45833in</Width>
+        <ZIndex>26</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox24">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value EvaluationMode="Constant" />
+                <Style>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>0.88416in</Top>
+        <Left>5.03471in</Left>
+        <Height>0.25in</Height>
+        <Width>2.18751in</Width>
+        <ZIndex>27</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox25">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Now()</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                  <Format>g</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>1.16194in</Top>
+        <Left>5.03471in</Left>
+        <Height>0.25in</Height>
+        <Width>2.18751in</Width>
+        <ZIndex>28</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox26">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Right("000" &amp; Parameters!ITEM.Value.ToString, 3)</Value>
+                <Style>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>1.42583in</Top>
+        <Left>5.03471in</Left>
+        <Height>0.25in</Height>
+        <Width>2.18751in</Width>
+        <ZIndex>29</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox27">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!OrderNumber.Value, "Items")</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>1.68972in</Top>
+        <Left>5.03471in</Left>
+        <Height>0.25in</Height>
+        <Width>2.18751in</Width>
+        <ZIndex>30</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox1">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>0.125in</Top>
+        <Left>2.41195in</Left>
+        <Height>0.69098in</Height>
+        <Width>1.52083in</Width>
+        <ZIndex>31</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox28">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Standard Wrap</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>2.23139in</Top>
+        <Left>5.5382in</Left>
+        <Height>0.25in</Height>
+        <Width>1.45833in</Width>
+        <ZIndex>32</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox29">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!Editor.Value, "Items")</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>2.2175in</Top>
+        <Left>2.78818in</Left>
+        <Height>0.25in</Height>
+        <Width>1.45833in</Width>
+        <ZIndex>33</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox30">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!DealerNo.Value, "Items")</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>2.23139in</Top>
+        <Left>0.16327in</Left>
+        <Height>0.25in</Height>
+        <Width>1.61806in</Width>
+        <ZIndex>34</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox31">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>HARDWARE DETAIL  :</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>4.75001in</Top>
+        <Left>2.41209in</Left>
+        <Height>0.25in</Height>
+        <Width>2.095in</Width>
+        <ZIndex>35</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Top</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox32">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>HEADING DETAIL  :</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>2.65973in</Top>
+        <Left>4.75708in</Left>
+        <Height>0.25001in</Height>
+        <Width>1.45833in</Width>
+        <ZIndex>36</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox33">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>OTHER FINISH  :</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>4.44445in</Top>
+        <Left>0.16341in</Left>
+        <Height>0.25in</Height>
+        <Width>1.45833in</Width>
+        <ZIndex>37</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox34">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>SIDE FINISH  :</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>4.18057in</Top>
+        <Left>0.16348in</Left>
+        <Height>0.25in</Height>
+        <Width>1.45833in</Width>
+        <ZIndex>38</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox35">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>DOOR FINISH   :</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>3.91668in</Top>
+        <Left>0.16348in</Left>
+        <Height>0.25in</Height>
+        <Width>1.45833in</Width>
+        <ZIndex>39</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox36">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>SIDE TYPE  :</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>3.52086in</Top>
+        <Left>0.17744in</Left>
+        <Height>0.25in</Height>
+        <Width>1.45833in</Width>
+        <ZIndex>40</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox37">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>SIDE SPECIE  :</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>3.25697in</Top>
+        <Left>0.17744in</Left>
+        <Height>0.25in</Height>
+        <Width>1.45833in</Width>
+        <ZIndex>41</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox38">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>DOOR SPECIE  :</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>2.93753in</Top>
+        <Left>0.17744in</Left>
+        <Height>0.25in</Height>
+        <Width>1.45833in</Width>
+        <ZIndex>42</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox39">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>DOOR STYLE  :</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>2.67364in</Top>
+        <Left>0.17737in</Left>
+        <Height>0.25in</Height>
+        <Width>1.45833in</Width>
+        <ZIndex>43</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox40">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!RegDoorStyle.Value, "WIPS_OrderObject") &amp; " - " &amp; LOOKUP(TRIM(First(Fields!RegDoorStyle.Value, "WIPS_OrderObject")),Fields!StyleCode.Value,Fields!StyleDesc.Value, "STYLECODE")</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>2.67364in</Top>
+        <Left>1.67737in</Left>
+        <Height>0.23611in</Height>
+        <Width>2.63534in</Width>
+        <ZIndex>44</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Tablix Name="Tablix1">
+        <TablixBody>
+          <TablixColumns>
+            <TablixColumn>
+              <Width>1in</Width>
+            </TablixColumn>
+          </TablixColumns>
+          <TablixRows>
+            <TablixRow>
+              <Height>0.25in</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox47">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>GRP</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox47</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+            <TablixRow>
+              <Height>0.25in</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="GRP">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!GRP.Value</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>GRP</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+          </TablixRows>
+        </TablixBody>
+        <TablixColumnHierarchy>
+          <TablixMembers>
+            <TablixMember />
+          </TablixMembers>
+        </TablixColumnHierarchy>
+        <TablixRowHierarchy>
+          <TablixMembers>
+            <TablixMember>
+              <KeepWithGroup>After</KeepWithGroup>
+            </TablixMember>
+            <TablixMember>
+              <Group Name="Details">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!GRP.Value</GroupExpression>
+                </GroupExpressions>
+                <PageBreak>
+                  <BreakLocation>Between</BreakLocation>
+                </PageBreak>
+              </Group>
+            </TablixMember>
+          </TablixMembers>
+        </TablixRowHierarchy>
+        <DataSetName>PageGroup</DataSetName>
+        <Top>10.71085in</Top>
+        <Left>0.04167in</Left>
+        <Height>0.5in</Height>
+        <Width>1in</Width>
+        <ZIndex>45</ZIndex>
+        <Visibility>
+          <Hidden>true</Hidden>
+        </Visibility>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Tablix>
+      <Textbox Name="Textbox53">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>This will be on the second page at all times just not showing info</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox53</rd:DefaultName>
+        <Top>11.30347in</Top>
+        <Left>1.62158in</Left>
+        <Height>0.25in</Height>
+        <Width>4.76953in</Width>
+        <ZIndex>46</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox2">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>this is the back</Value>
+                <Style>
+                  <FontSize>50pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox2</rd:DefaultName>
+        <Top>11.72792in</Top>
+        <Left>0.79736in</Left>
+        <Height>0.98958in</Height>
+        <Width>6.19917in</Width>
+        <ZIndex>47</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox48">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>="Door : " &amp; First(Fields!DoorHardware.Value, "WIPS_OrderObject")</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>5.06945in</Top>
+        <Left>0.13568in</Left>
+        <Height>0.25in</Height>
+        <Width>0.87847in</Width>
+        <ZIndex>48</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox49">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!DrawConstr.Value, "WIPS_OrderObject")</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>4.75001in</Top>
+        <Left>4.57653in</Left>
+        <Height>0.25in</Height>
+        <Width>2.42014in</Width>
+        <ZIndex>49</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Top</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox50">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>="Hinge : " &amp; First(Fields!HingeHardware.Value, "WIPS_OrderObject")</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>5.06945in</Top>
+        <Left>3.6011in</Left>
+        <Height>0.25in</Height>
+        <Width>0.87847in</Width>
+        <ZIndex>50</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox51">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>="Drawer : " &amp; First(Fields!DrwrHardware.Value, "WIPS_OrderObject")</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>5.06945in</Top>
+        <Left>1.87352in</Left>
+        <Height>0.25in</Height>
+        <Width>0.87847in</Width>
+        <ZIndex>51</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox52">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>="Other : "</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>5.06945in</Top>
+        <Left>5.37352in</Left>
+        <Height>0.25in</Height>
+        <Width>0.87847in</Width>
+        <ZIndex>52</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox54">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>="D.P.  " &amp; iif(isnothing(First(Fields!DateDetailed.Value, "Items")) = 1, First(Fields!DateDetailed.Value, "Items"),Today())</Value>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>5.3889in</Top>
+        <Left>0.13582in</Left>
+        <Height>0.1875in</Height>
+        <Width>0.87833in</Width>
+        <ZIndex>53</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox55">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!DesignGroup.Value, "Items")</Value>
+                <Style>
+                  <FontFamily>Bookman Old Style</FontFamily>
+                  <FontSize>36pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>5.36112in</Top>
+        <Left>1.08359in</Left>
+        <Height>0.83681in</Height>
+        <Width>1.55382in</Width>
+        <ZIndex>54</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox56">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=TRIM(Parameters!Order.Value)</Value>
+                <Style>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>5.74028in</Top>
+        <Left>2.67908in</Left>
+        <Height>0.25in</Height>
+        <Width>2.01389in</Width>
+        <ZIndex>55</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox57">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Right("000" &amp; Parameters!ITEM.Value.ToString(), 3)</Value>
+                <Style>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>5.74028in</Top>
+        <Left>4.70686in</Left>
+        <Height>0.25in</Height>
+        <Width>0.93055in</Width>
+        <ZIndex>56</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox58">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!FirmShipDate.Value, "Items")</Value>
+                <Style>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                  <Format>d</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>5.74028in</Top>
+        <Left>5.65649in</Left>
+        <Height>0.25in</Height>
+        <Width>1.5243in</Width>
+        <ZIndex>57</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox59">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>="Mark as : " &amp; First(Fields!MarkFor.Value, "Items") &amp; " " &amp; First(Fields!MarkComment.Value, "Items")</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>6.01806in</Top>
+        <Left>2.67908in</Left>
+        <Height>0.25in</Height>
+        <Width>4.50171in</Width>
+        <ZIndex>58</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox60">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>= First(Fields!ItemCode.Value, "Items") &amp; " - " &amp; LOOKUP(TRIM(First(Fields!ItemCode.Value, "Items")),Fields!CADG_SmartPriceCode.Value,Fields!CADG_FieldDescription.Value, "CabCodeRef")</Value>
+                <Style>
+                  <FontFamily>Arial Black</FontFamily>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>6.30973in</Top>
+        <Left>0.23267in</Left>
+        <Height>0.32292in</Height>
+        <Width>6.93423in</Width>
+        <ZIndex>59</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Tablix Name="Tablix3">
+        <TablixBody>
+          <TablixColumns>
+            <TablixColumn>
+              <Width>0.26042in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>0.30206in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>0.26041in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>6.16666in</Width>
+            </TablixColumn>
+          </TablixColumns>
+          <TablixRows>
+            <TablixRow>
+              <Height>0.25in</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="comment_type">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!comment_type.Value</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>comment_type</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="OptionNumber">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!OptionNumber.Value</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>OptionNumber</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Order">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!Order.Value</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Order</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="comment">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!comment.Value</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>comment</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+          </TablixRows>
+        </TablixBody>
+        <TablixColumnHierarchy>
+          <TablixMembers>
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+          </TablixMembers>
+        </TablixColumnHierarchy>
+        <TablixRowHierarchy>
+          <TablixMembers>
+            <TablixMember>
+              <Group Name="Details1" />
+              <Visibility>
+                <Hidden>=iif(Fields!comment_type.Value = "OP" OR Fields!comment_type.Value = "OP" ,False,True)</Hidden>
+              </Visibility>
+            </TablixMember>
+          </TablixMembers>
+        </TablixRowHierarchy>
+        <DataSetName>COMMENTS</DataSetName>
+        <Top>7.01265in</Top>
+        <Left>0.19126in</Left>
+        <Height>0.25in</Height>
+        <Width>6.98955in</Width>
+        <ZIndex>60</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Tablix>
+      <Textbox Name="Textbox61">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>= First(Fields!OH_Comment.Value, "Items")</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>2.95141in</Top>
+        <Left>3.80924in</Left>
+        <Height>0.93749in</Height>
+        <Width>3.41312in</Width>
+        <ZIndex>61</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox62">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!OI_Comment.Value, "Items")</Value>
+                <Style>
+                  <FontFamily>Arial Black</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>6.63265in</Top>
+        <Left>0.23267in</Left>
+        <Height>0.32292in</Height>
+        <Width>6.96203in</Width>
+        <ZIndex>62</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox5">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Parameters!Order.Value &amp; " " &amp; Parameters!ITEM.Value  &amp; "  " &amp; Format(First(Fields!FirmShipDate.Value, "Items"), "MM/dd")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox5</rd:DefaultName>
+        <Top>10.41918in</Top>
+        <Left>0.21878in</Left>
+        <Height>0.25in</Height>
+        <Width>2in</Width>
+        <ZIndex>63</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox63">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Parameters!Order.Value &amp; " " &amp; Parameters!ITEM.Value &amp; "  " &amp; Format(First(Fields!FirmShipDate.Value, "Items"), "MM/dd")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox5</rd:DefaultName>
+        <Top>10.41918in</Top>
+        <Left>2.24651in</Left>
+        <Height>0.25in</Height>
+        <Width>2in</Width>
+        <ZIndex>64</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox64">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Parameters!Order.Value &amp; " " &amp; Parameters!ITEM.Value &amp; "  " &amp; Format(First(Fields!FirmShipDate.Value, "Items"), "MM/dd")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox5</rd:DefaultName>
+        <Top>10.41918in</Top>
+        <Left>4.24653in</Left>
+        <Height>0.25in</Height>
+        <Width>4.05556in</Width>
+        <ZIndex>65</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox65">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Parameters!Order.Value &amp; " " &amp; Parameters!ITEM.Value &amp; "  " &amp; Format(First(Fields!FirmShipDate.Value, "Items"), "MM/dd")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox5</rd:DefaultName>
+        <Top>10.15529in</Top>
+        <Left>6.30209in</Left>
+        <Height>0.25in</Height>
+        <Width>2in</Width>
+        <ZIndex>66</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox66">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Parameters!Order.Value &amp; " " &amp; Parameters!ITEM.Value &amp; "  " &amp; Format(First(Fields!FirmShipDate.Value, "Items"), "MM/dd")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox5</rd:DefaultName>
+        <Top>9.87751in</Top>
+        <Left>6.30209in</Left>
+        <Height>0.25in</Height>
+        <Width>2in</Width>
+        <ZIndex>67</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox67">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Parameters!Order.Value &amp; " " &amp; Parameters!ITEM.Value &amp; "  " &amp; Format(First(Fields!FirmShipDate.Value, "Items"), "MM/dd")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox5</rd:DefaultName>
+        <Top>10.1414in</Top>
+        <Left>4.30209in</Left>
+        <Height>0.25in</Height>
+        <Width>2in</Width>
+        <ZIndex>68</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox68">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Parameters!Order.Value &amp; " " &amp; Parameters!ITEM.Value &amp; "  " &amp; Format(First(Fields!FirmShipDate.Value, "Items"), "MM/dd")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox5</rd:DefaultName>
+        <Top>10.1414in</Top>
+        <Left>2.26042in</Left>
+        <Height>0.25in</Height>
+        <Width>2in</Width>
+        <ZIndex>69</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox69">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Parameters!Order.Value &amp; " " &amp; Parameters!ITEM.Value &amp; "  " &amp; Format(First(Fields!FirmShipDate.Value, "Items"), "MM/dd")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox5</rd:DefaultName>
+        <Top>10.15529in</Top>
+        <Left>0.21878in</Left>
+        <Height>0.25in</Height>
+        <Width>2in</Width>
+        <ZIndex>70</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox70">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Parameters!Order.Value &amp; " " &amp; Parameters!ITEM.Value &amp; "  " &amp; Format(First(Fields!FirmShipDate.Value, "Items"), "MM/dd")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox5</rd:DefaultName>
+        <Top>9.87751in</Top>
+        <Left>0.21878in</Left>
+        <Height>0.25in</Height>
+        <Width>2in</Width>
+        <ZIndex>71</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox71">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Parameters!Order.Value &amp; " " &amp; Parameters!ITEM.Value &amp; "  " &amp; Format(First(Fields!FirmShipDate.Value, "Items"), "MM/dd")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox5</rd:DefaultName>
+        <Top>9.87751in</Top>
+        <Left>2.26042in</Left>
+        <Height>0.25in</Height>
+        <Width>2in</Width>
+        <ZIndex>72</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox72">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Parameters!Order.Value &amp; " " &amp; Parameters!ITEM.Value &amp; "  " &amp; Format(First(Fields!FirmShipDate.Value, "Items"), "MM/dd")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox5</rd:DefaultName>
+        <Top>9.87751in</Top>
+        <Left>4.30209in</Left>
+        <Height>0.25in</Height>
+        <Width>2in</Width>
+        <ZIndex>73</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+    </ReportItems>
+    <Height>12.7175in</Height>
+    <Style />
+  </Body>
+  <Width>8.35069in</Width>
+  <Page>
+    <PageHeight>10.75in</PageHeight>
+    <InteractiveHeight>10.75in</InteractiveHeight>
+    <InteractiveWidth>8.5in</InteractiveWidth>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="vm250">
+      <DataSourceReference>vm250</DataSourceReference>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>c8ed9f6d-45be-44ae-b769-cda49de01d35</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="Items">
+      <Query>
+        <DataSourceName>vm250</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@Order">
+            <Value>=Parameters!Order.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@ITEM">
+            <Value>=Parameters!ITEM.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>SELECT DISTINCT 
+                      onr.PreReleaseID, oh.DealerNo, onr.OrderNumber, onr.ParentOrderNumber, onr.ShipsWithOrderNumber, oh.JobName, oh.DesignGroup, oh.FirmShipDate, 
+                      oi.[Order] AS ItemNum, oa.QuestionId, oa.Question, oa.AdvancewareCode, oa.AnswerType, oa.FactoryReviewRequired, od.DrawingNumber, od.Comment, oi.Quantity, 
+                      oi.HasOptionsFlag, oi.ItemCode, oi.Comment AS OI_Comment, oi.ActualWidth1, oi.ActualHeight1, oi.ActualDepth1, oi.ActualWidth2, oi.ActualHeight2, oi.ActualDepth2, 
+                      oi.AWItemName, oi.AWItemDesc, oi.AWWidth, oi.AWHeight, oi.AWDepth, oi.FinishedSidesCode, oi.HingingCode, oi.OrientationCode, oi.PrintLocation, 
+                      oi.NeedsDetailingFlag, oi.DateDetailed, oi.ManufPartNo, oi.ManufPartRev, oi.ManufPartNoCode, oi.SmartPriceItemID, oi.ItemNumber, oi.BOMCreatedCode, 
+                      oi.ProdTicketCode, oio.OptionCode, oio.Quantity AS Expr1, oio.FinishedSidesCode AS Expr2, oio.ActualWidth1 AS Expr3, oio.ActualHeight1 AS Expr4, 
+                      oio.ActualDepth1 AS Expr5, oio.HingingCode AS Expr6, oio.OrientationCode AS Expr7, oio.OI_ID, oio.SmartPriceItemID AS Expr8, oio.ActualDepth2 AS Expr9, 
+                      oio.ActualWidth2 AS Expr10, oio.ActualHeight2 AS Expr11, oio.OptionNumber, og.MarkFor, og.MarkComment, og.MarkOrder, og.QtyCabinets, og.QtyOptions, og.ID, 
+                      og.SmartPriceMarkID, oh.IsPromptlyFlag, oh.TentativeShipDate, oh.OrderBeenReleasedFlag, oh.OrderReleaseCode, oh.XOverDesignGroup, oh.XOverCode, 
+                      oh.XOverDesc, oh.DateLastUpdate, oh.UserLastUpdate, oh.ReceiptDate, oh.DetailingUser AS Editor, oh.WrapCode, oh.Comment AS OH_Comment, oh.FirmShipGroup, 
+                      oh.ShippingAccommodationCode, oh.ShippingAccommodationInfo, oh.BlockNumber
+FROM         PreOrder.OD_OrderDrawings AS od RIGHT OUTER JOIN
+                      PreOrder.ONR_OrderNumberReference AS onr INNER JOIN
+                      PreOrder.OH_OrderHeaders AS oh ON onr.PreReleaseID = oh.PreReleaseID INNER JOIN
+                      PreOrder.OI_OrderItems AS oi ON oh.PreReleaseID = oi.PreReleaseID LEFT OUTER JOIN
+                      PreOrder.IP_ItemPremiums AS ip ON oi.ID = ip.OI_ID ON od.ID = oi.ID LEFT OUTER JOIN
+                      PreOrder.OG_OrderGroups AS og ON oi.OG_ID = og.ID AND oi.PreReleaseID = og.PreReleaseID LEFT OUTER JOIN
+                      PreOrder.OIO_OrderItemOptions AS oio INNER JOIN
+                      PreOrder.OA_OrderAnswers AS oa ON oio.ID = oa.OIO_ID ON oi.ID = oio.OI_ID AND oi.PreReleaseID = oio.PreReleaseID AND oi.ID = oa.OI_ID
+WHERE     (onr.OrderNumber LIKE '%' + @Order + '%') AND (oi.[Order] = @ITEM)</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="PreReleaseID">
+          <DataField>PreReleaseID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="DealerNo">
+          <DataField>DealerNo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ItemNum">
+          <DataField>ItemNum</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="OrderNumber">
+          <DataField>OrderNumber</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ParentOrderNumber">
+          <DataField>ParentOrderNumber</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ShipsWithOrderNumber">
+          <DataField>ShipsWithOrderNumber</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FirmShipDate">
+          <DataField>FirmShipDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="QuestionId">
+          <DataField>QuestionId</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Question">
+          <DataField>Question</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="AdvancewareCode">
+          <DataField>AdvancewareCode</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="AnswerType">
+          <DataField>AnswerType</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FactoryReviewRequired">
+          <DataField>FactoryReviewRequired</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="DrawingNumber">
+          <DataField>DrawingNumber</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="Comment">
+          <DataField>Comment</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Quantity">
+          <DataField>Quantity</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="HasOptionsFlag">
+          <DataField>HasOptionsFlag</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="ItemCode">
+          <DataField>ItemCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="OI_Comment">
+          <DataField>OI_Comment</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ActualWidth1">
+          <DataField>ActualWidth1</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="ActualHeight1">
+          <DataField>ActualHeight1</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="ActualDepth1">
+          <DataField>ActualDepth1</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="ActualWidth2">
+          <DataField>ActualWidth2</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="ActualHeight2">
+          <DataField>ActualHeight2</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="ActualDepth2">
+          <DataField>ActualDepth2</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="AWItemName">
+          <DataField>AWItemName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="AWItemDesc">
+          <DataField>AWItemDesc</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="AWWidth">
+          <DataField>AWWidth</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="AWHeight">
+          <DataField>AWHeight</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="AWDepth">
+          <DataField>AWDepth</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="FinishedSidesCode">
+          <DataField>FinishedSidesCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HingingCode">
+          <DataField>HingingCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="OrientationCode">
+          <DataField>OrientationCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PrintLocation">
+          <DataField>PrintLocation</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NeedsDetailingFlag">
+          <DataField>NeedsDetailingFlag</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="DateDetailed">
+          <DataField>DateDetailed</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="ManufPartNo">
+          <DataField>ManufPartNo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ManufPartRev">
+          <DataField>ManufPartRev</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ManufPartNoCode">
+          <DataField>ManufPartNoCode</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="SmartPriceItemID">
+          <DataField>SmartPriceItemID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ItemNumber">
+          <DataField>ItemNumber</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="BOMCreatedCode">
+          <DataField>BOMCreatedCode</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="ProdTicketCode">
+          <DataField>ProdTicketCode</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="OptionCode">
+          <DataField>OptionCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Expr5">
+          <DataField>Expr5</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Expr6">
+          <DataField>Expr6</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Expr7">
+          <DataField>Expr7</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="OI_ID">
+          <DataField>OI_ID</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
+        </Field>
+        <Field Name="Expr8">
+          <DataField>Expr8</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Expr9">
+          <DataField>Expr9</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Expr10">
+          <DataField>Expr10</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Expr11">
+          <DataField>Expr11</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="OptionNumber">
+          <DataField>OptionNumber</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="MarkFor">
+          <DataField>MarkFor</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MarkComment">
+          <DataField>MarkComment</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MarkOrder">
+          <DataField>MarkOrder</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="QtyCabinets">
+          <DataField>QtyCabinets</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="QtyOptions">
+          <DataField>QtyOptions</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ID">
+          <DataField>ID</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
+        </Field>
+        <Field Name="SmartPriceMarkID">
+          <DataField>SmartPriceMarkID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="IsPromptlyFlag">
+          <DataField>IsPromptlyFlag</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="TentativeShipDate">
+          <DataField>TentativeShipDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="OrderBeenReleasedFlag">
+          <DataField>OrderBeenReleasedFlag</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="OrderReleaseCode">
+          <DataField>OrderReleaseCode</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="XOverDesignGroup">
+          <DataField>XOverDesignGroup</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="XOverCode">
+          <DataField>XOverCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="XOverDesc">
+          <DataField>XOverDesc</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DateLastUpdate">
+          <DataField>DateLastUpdate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="UserLastUpdate">
+          <DataField>UserLastUpdate</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ReceiptDate">
+          <DataField>ReceiptDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="Expr1">
+          <DataField>Expr1</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Expr2">
+          <DataField>Expr2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="JobName">
+          <DataField>JobName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DesignGroup">
+          <DataField>DesignGroup</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Expr3">
+          <DataField>Expr3</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Expr4">
+          <DataField>Expr4</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Editor">
+          <DataField>Editor</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="WrapCode">
+          <DataField>WrapCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="OH_Comment">
+          <DataField>OH_Comment</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FirmShipGroup">
+          <DataField>FirmShipGroup</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="ShippingAccommodationCode">
+          <DataField>ShippingAccommodationCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ShippingAccommodationInfo">
+          <DataField>ShippingAccommodationInfo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BlockNumber">
+          <DataField>BlockNumber</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="STYLECODE">
+      <Query>
+        <DataSourceName>vm250</DataSourceName>
+        <CommandText>SELECT     WIPS_StyleCodeRef_STRF.STRF_StyleCode AS StyleCode, WIPS_StyleCodeRef_STRF.STRF_Description AS StyleDesc, 
+                      WIPS_StyleCodeRef_STRF.STRF_DoorBaseCode AS AbbrevStyleCode, WIPS_StyleCodeRef_STRF.STRF_ADrawBaseCode, 
+                      WIPS_StyleCodeRef_STRF.STRF_BDrawBaseCode, WIPS_StyleCodeRef_STRF.STRF_StyleFamilyCode, WIPS_StyleCodeRef_STRF.STRF_CDrawBaseCode, 
+                      WIPS_StyleCodeDG_STDG.STDG_DesignGroup AS DesignGroup, WIPS_StyleCodeDG_STDG.STDG_PlantDescription, WIPS_StyleFamilyRef_SFRF.SFRF_Description, 
+                      WIPS_StyleFamilyRef_SFRF.SFRF_ReportName, WIPS_StyleFamilyRef_SFRF.SFRF_InUseFlag, WIPS_StyleCodeDG_STDG.STDG_OpaqueDoorStockedFlag, 
+                      WIPS_StyleCodeRef_STRF.STRF_HasProdPictureFlag, WIPS_StyleCodeRef_STRF.STRF_PlantDescription
+FROM         WIPS_StyleCodeRef_STRF INNER JOIN
+                      WIPS_StyleCodeDG_STDG ON WIPS_StyleCodeRef_STRF.STRF_StyleCode = WIPS_StyleCodeDG_STDG.STDG_StyleCode INNER JOIN
+                      WIPS_StyleFamilyRef_SFRF ON WIPS_StyleCodeRef_STRF.STRF_StyleFamilyCode = WIPS_StyleFamilyRef_SFRF.SFRF_StyleFamilyCode</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="StyleCode">
+          <DataField>StyleCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="StyleDesc">
+          <DataField>StyleDesc</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="AbbrevStyleCode">
+          <DataField>AbbrevStyleCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DesignGroup">
+          <DataField>DesignGroup</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="STRF_ADrawBaseCode">
+          <DataField>STRF_ADrawBaseCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="STRF_BDrawBaseCode">
+          <DataField>STRF_BDrawBaseCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="STRF_StyleFamilyCode">
+          <DataField>STRF_StyleFamilyCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="STRF_CDrawBaseCode">
+          <DataField>STRF_CDrawBaseCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="STDG_PlantDescription">
+          <DataField>STDG_PlantDescription</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SFRF_Description">
+          <DataField>SFRF_Description</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SFRF_ReportName">
+          <DataField>SFRF_ReportName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SFRF_InUseFlag">
+          <DataField>SFRF_InUseFlag</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="STDG_OpaqueDoorStockedFlag">
+          <DataField>STDG_OpaqueDoorStockedFlag</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="STRF_HasProdPictureFlag">
+          <DataField>STRF_HasProdPictureFlag</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="STRF_PlantDescription">
+          <DataField>STRF_PlantDescription</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="WoodRef">
+      <Query>
+        <DataSourceName>vm250</DataSourceName>
+        <CommandText>SELECT     WoodCode, WoodCodeDesc, AbbrevWoodCode, Cur42Price, Old42Price, Cur84Price, Old84Price, CurBHPrice, OldBHPrice, CurB2Price, OldB2Price, TrueWood, blank, 
+                      DeleteCode, cnxrownumber
+FROM         WIPS_StagedData.dbo.INF_WoodReference</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="WoodCode">
+          <DataField>WoodCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="WoodCodeDesc">
+          <DataField>WoodCodeDesc</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="AbbrevWoodCode">
+          <DataField>AbbrevWoodCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Cur42Price">
+          <DataField>Cur42Price</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Old42Price">
+          <DataField>Old42Price</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Cur84Price">
+          <DataField>Cur84Price</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Old84Price">
+          <DataField>Old84Price</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="CurBHPrice">
+          <DataField>CurBHPrice</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="OldBHPrice">
+          <DataField>OldBHPrice</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="CurB2Price">
+          <DataField>CurB2Price</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="OldB2Price">
+          <DataField>OldB2Price</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="TrueWood">
+          <DataField>TrueWood</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="blank">
+          <DataField>blank</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DeleteCode">
+          <DataField>DeleteCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="cnxrownumber">
+          <DataField>cnxrownumber</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="CABCONSTCD">
+      <Query>
+        <DataSourceName>vm250</DataSourceName>
+        <CommandText>SELECT     ConstrCodeNumber, ConstrCode, ConstrCodeDescription, cnxrownumber
+FROM         WIPS_StagedData.dbo.INF_ConstructionCodes
+WHERE     (ConstrCodeNumber = 4)</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="ConstrCodeNumber">
+          <DataField>ConstrCodeNumber</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ConstrCode">
+          <DataField>ConstrCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ConstrCodeDescription">
+          <DataField>ConstrCodeDescription</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="cnxrownumber">
+          <DataField>cnxrownumber</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="PageGroup">
+      <Query>
+        <DataSourceName>vm250</DataSourceName>
+        <CommandText>SELECT     'A' AS GRP
+UNION
+SELECT     'B' AS GRP</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="GRP">
+          <DataField>GRP</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="WIPS_OrderObject">
+      <Query>
+        <DataSourceName>vm250</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@PreReleaseID">
+            <Value>=Parameters!PreReleaseID.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>SELECT     PreReleaseID, GroupPremComment, ADrawerStyle, CabConstr, Distressing, DoorFinish, DoorHardware, DoorSpecie, DrawConstr, DrwrHardware, HingeHardware, 
+                      OtherFinish, RegDoorStyle, SideFinish, SideSpecie, TallDoorStyle
+FROM         vOrderObjectValues_Pivot
+WHERE     (PreReleaseID = @PreReleaseID)</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="PreReleaseID">
+          <DataField>PreReleaseID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="GroupPremComment">
+          <DataField>GroupPremComment</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ADrawerStyle">
+          <DataField>ADrawerStyle</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CabConstr">
+          <DataField>CabConstr</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Distressing">
+          <DataField>Distressing</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DoorFinish">
+          <DataField>DoorFinish</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DoorHardware">
+          <DataField>DoorHardware</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DoorSpecie">
+          <DataField>DoorSpecie</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DrawConstr">
+          <DataField>DrawConstr</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DrwrHardware">
+          <DataField>DrwrHardware</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HingeHardware">
+          <DataField>HingeHardware</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="OtherFinish">
+          <DataField>OtherFinish</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RegDoorStyle">
+          <DataField>RegDoorStyle</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SideFinish">
+          <DataField>SideFinish</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SideSpecie">
+          <DataField>SideSpecie</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TallDoorStyle">
+          <DataField>TallDoorStyle</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="Order_X_Ref">
+      <Query>
+        <DataSourceName>vm250</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@Order">
+            <Value>=Parameters!Order.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>SELECT     PreReleaseID, OrderNumber
+FROM         PreOrder.ONR_OrderNumberReference
+WHERE     (OrderNumber LIKE '%' + @Order + '%')</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="PreReleaseID">
+          <DataField>PreReleaseID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="OrderNumber">
+          <DataField>OrderNumber</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="WIPS_FINISHCODE_REF">
+      <Query>
+        <DataSourceName>vm250</DataSourceName>
+        <CommandText>SELECT     TOP (1000) FNRF_FinishCode, FNRF_Description, FNRF_FinishGroupCode, FNRF_FinishType, FNRF_GlossCode, FNRF_PilasterColorCode, FNRF_SpecialFlag, 
+                      FNRF_NoRouteFlag, FNRF_SmartPriceQuoteFlag, FNRF_NeedsRubFlag, FNRF_FauxFinishCode, FNRF_PrimerCode, FNRF_SubstrateGradeCode, FNRF_Natural, 
+                      FNRF_TwoStep, FNRF_Stain, FNRF_SprayStain, FNRF_HeirloomGlaze, FNRF_CottageGlaze, FNRF_Opaque, FNRF_Crackle, FNRF_StandardDis, FNRF_Cefla, 
+                      FNRF_PerSampleUnknown, FNRF_Burnish, FNRF_DryBrush, FNRF_DateLastUpdate, FNRF_UserLastUpdate, FNRF_InUseFlag, FNRF_IsSecondaryLocFinishFlag, 
+                      FNRF_LegacyFinish, FNRF_PlantDescription, FNRF_PromptlyType, FNRF_LikeFinishCode, FNRF_UnfinishedFlag, FNRF_BlockNumFlag, 
+                      FNRF_AvailableToPaintRoom
+FROM         WIPS_FinishCodeRef_FNRF</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="FNRF_FinishCode">
+          <DataField>FNRF_FinishCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FNRF_Description">
+          <DataField>FNRF_Description</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FNRF_FinishGroupCode">
+          <DataField>FNRF_FinishGroupCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FNRF_FinishType">
+          <DataField>FNRF_FinishType</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FNRF_GlossCode">
+          <DataField>FNRF_GlossCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FNRF_PilasterColorCode">
+          <DataField>FNRF_PilasterColorCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FNRF_SpecialFlag">
+          <DataField>FNRF_SpecialFlag</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="FNRF_NoRouteFlag">
+          <DataField>FNRF_NoRouteFlag</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="FNRF_SmartPriceQuoteFlag">
+          <DataField>FNRF_SmartPriceQuoteFlag</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="FNRF_NeedsRubFlag">
+          <DataField>FNRF_NeedsRubFlag</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="FNRF_FauxFinishCode">
+          <DataField>FNRF_FauxFinishCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FNRF_PrimerCode">
+          <DataField>FNRF_PrimerCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FNRF_SubstrateGradeCode">
+          <DataField>FNRF_SubstrateGradeCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FNRF_Natural">
+          <DataField>FNRF_Natural</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="FNRF_TwoStep">
+          <DataField>FNRF_TwoStep</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="FNRF_Stain">
+          <DataField>FNRF_Stain</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="FNRF_SprayStain">
+          <DataField>FNRF_SprayStain</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="FNRF_HeirloomGlaze">
+          <DataField>FNRF_HeirloomGlaze</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="FNRF_CottageGlaze">
+          <DataField>FNRF_CottageGlaze</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="FNRF_Opaque">
+          <DataField>FNRF_Opaque</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="FNRF_Crackle">
+          <DataField>FNRF_Crackle</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="FNRF_StandardDis">
+          <DataField>FNRF_StandardDis</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="FNRF_Cefla">
+          <DataField>FNRF_Cefla</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="FNRF_PerSampleUnknown">
+          <DataField>FNRF_PerSampleUnknown</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="FNRF_Burnish">
+          <DataField>FNRF_Burnish</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="FNRF_DryBrush">
+          <DataField>FNRF_DryBrush</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="FNRF_DateLastUpdate">
+          <DataField>FNRF_DateLastUpdate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="FNRF_UserLastUpdate">
+          <DataField>FNRF_UserLastUpdate</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FNRF_InUseFlag">
+          <DataField>FNRF_InUseFlag</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="FNRF_IsSecondaryLocFinishFlag">
+          <DataField>FNRF_IsSecondaryLocFinishFlag</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="FNRF_LegacyFinish">
+          <DataField>FNRF_LegacyFinish</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FNRF_PlantDescription">
+          <DataField>FNRF_PlantDescription</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FNRF_PromptlyType">
+          <DataField>FNRF_PromptlyType</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FNRF_LikeFinishCode">
+          <DataField>FNRF_LikeFinishCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FNRF_UnfinishedFlag">
+          <DataField>FNRF_UnfinishedFlag</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="FNRF_BlockNumFlag">
+          <DataField>FNRF_BlockNumFlag</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="FNRF_AvailableToPaintRoom">
+          <DataField>FNRF_AvailableToPaintRoom</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="COMMENTS">
+      <Query>
+        <DataSourceName>vm250</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@Order">
+            <Value>=Parameters!Order.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@ITEM">
+            <Value>=Parameters!ITEM.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>wmsp_SmartPrice_Comments_test_Preo</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="ParentOrderNumber">
+          <DataField>ParentOrderNumber</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ItemNumber">
+          <DataField>ItemNumber</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="PreReleaseID">
+          <DataField>PreReleaseID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="comment">
+          <DataField>comment</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="comment_type">
+          <DataField>comment_type</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Order">
+          <DataField>Order</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
+        </Field>
+        <Field Name="OptionNumber">
+          <DataField>OptionNumber</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="CabCodeRef">
+      <Query>
+        <DataSourceName>vm250</DataSourceName>
+        <CommandText>SELECT  [CADG_DesignGroup]
+      ,[CADG_CabinetCode]
+      ,[CADG_FieldDescription]
+      ,[CADG_PlantDescription]
+      ,[CADG_TypeCode]
+      ,[CADG_PriceIncCode]
+      ,[CADG_HowToCalcCode]
+      ,[CADG_Amount]
+      ,[CADG_MinimumCharge]
+      ,[CADG_ActualWidthDim1]
+      ,[CADG_ActualHeightDim1]
+      ,[CADG_ActualDepthDim1]
+      ,[CADG_ActualWidthDim2]
+      ,[CADG_ActualHeightDim2]
+      ,[CADG_ActualDepthDim2]
+      ,[CADG_CubicVol]
+      ,[CADG_Weight]
+      ,[CADG_DrillCode]
+      ,[CADG_SmartPriceInheritsWidFlag]
+      ,[CADG_SmartPriceInheritsDepFlag]
+      ,[CADG_SmartPriceInheritsHegFlag]
+      ,[CADG_HasGlassShelfFlag]
+      ,[CADG_HasColorPilasterFlag]
+      ,[CADG_HingingRequiredFlag]
+      ,[CADG_FinishInSecondaryLocFlag]
+      ,[CADG_LorRFlag]
+      ,[CADG_SmartPriceComment]
+      ,[CADG_SmartPriceMaxQty]
+      ,[CADG_SmartPriceDefaultQty]
+      ,[CADG_ID]
+      ,[CADG_CatalogUpdates]
+      ,[CADG_DateLastUpdate]
+      ,[CADG_UserLastUpdate]
+      ,[CADG_InUseFlag]
+      ,[CADG_LegacyDG]
+      ,[CADG_LegacyPrefix]
+      ,[CADG_LegacyCabType]
+      ,[CADG_LegacyWidth]
+      ,[CADG_LegacyHeigth]
+      ,[CADG_LegacyDepth]
+      ,[CADG_LegacyOption]
+      ,[CADG_BlindCode]
+      ,[CADG_CabinetTypeCode]
+      ,[CADG_PrefixCode]
+      ,[CADG_SmartPriceDuplicateCode]
+      ,[CADG_SmartPriceCode]
+      ,[CADG_EmployeeOnlyFlag]
+      ,[CADG_MustBeDetailedFlag]
+      ,[CADG_OptionCode]
+      ,[ITCH_ID]
+  FROM [WIPS_Production].[dbo].[WIPS_CabinetCodeDG_CADG]</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="CADG_DesignGroup">
+          <DataField>CADG_DesignGroup</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CADG_CabinetCode">
+          <DataField>CADG_CabinetCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CADG_FieldDescription">
+          <DataField>CADG_FieldDescription</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CADG_PlantDescription">
+          <DataField>CADG_PlantDescription</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CADG_TypeCode">
+          <DataField>CADG_TypeCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CADG_PriceIncCode">
+          <DataField>CADG_PriceIncCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CADG_HowToCalcCode">
+          <DataField>CADG_HowToCalcCode</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="CADG_Amount">
+          <DataField>CADG_Amount</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="CADG_MinimumCharge">
+          <DataField>CADG_MinimumCharge</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="CADG_ActualWidthDim1">
+          <DataField>CADG_ActualWidthDim1</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="CADG_ActualHeightDim1">
+          <DataField>CADG_ActualHeightDim1</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="CADG_ActualDepthDim1">
+          <DataField>CADG_ActualDepthDim1</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="CADG_ActualWidthDim2">
+          <DataField>CADG_ActualWidthDim2</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="CADG_ActualHeightDim2">
+          <DataField>CADG_ActualHeightDim2</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="CADG_ActualDepthDim2">
+          <DataField>CADG_ActualDepthDim2</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="CADG_CubicVol">
+          <DataField>CADG_CubicVol</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="CADG_Weight">
+          <DataField>CADG_Weight</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="CADG_DrillCode">
+          <DataField>CADG_DrillCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CADG_SmartPriceInheritsWidFlag">
+          <DataField>CADG_SmartPriceInheritsWidFlag</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="CADG_SmartPriceInheritsDepFlag">
+          <DataField>CADG_SmartPriceInheritsDepFlag</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="CADG_SmartPriceInheritsHegFlag">
+          <DataField>CADG_SmartPriceInheritsHegFlag</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="CADG_HasGlassShelfFlag">
+          <DataField>CADG_HasGlassShelfFlag</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="CADG_HasColorPilasterFlag">
+          <DataField>CADG_HasColorPilasterFlag</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="CADG_HingingRequiredFlag">
+          <DataField>CADG_HingingRequiredFlag</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="CADG_FinishInSecondaryLocFlag">
+          <DataField>CADG_FinishInSecondaryLocFlag</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="CADG_LorRFlag">
+          <DataField>CADG_LorRFlag</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="CADG_SmartPriceComment">
+          <DataField>CADG_SmartPriceComment</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CADG_SmartPriceMaxQty">
+          <DataField>CADG_SmartPriceMaxQty</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="CADG_SmartPriceDefaultQty">
+          <DataField>CADG_SmartPriceDefaultQty</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="CADG_ID">
+          <DataField>CADG_ID</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
+        </Field>
+        <Field Name="CADG_CatalogUpdates">
+          <DataField>CADG_CatalogUpdates</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CADG_DateLastUpdate">
+          <DataField>CADG_DateLastUpdate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="CADG_UserLastUpdate">
+          <DataField>CADG_UserLastUpdate</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CADG_InUseFlag">
+          <DataField>CADG_InUseFlag</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="CADG_LegacyDG">
+          <DataField>CADG_LegacyDG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CADG_LegacyPrefix">
+          <DataField>CADG_LegacyPrefix</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CADG_LegacyCabType">
+          <DataField>CADG_LegacyCabType</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CADG_LegacyWidth">
+          <DataField>CADG_LegacyWidth</DataField>
+          <rd:TypeName>System.Byte</rd:TypeName>
+        </Field>
+        <Field Name="CADG_LegacyHeigth">
+          <DataField>CADG_LegacyHeigth</DataField>
+          <rd:TypeName>System.Byte</rd:TypeName>
+        </Field>
+        <Field Name="CADG_LegacyDepth">
+          <DataField>CADG_LegacyDepth</DataField>
+          <rd:TypeName>System.Byte</rd:TypeName>
+        </Field>
+        <Field Name="CADG_LegacyOption">
+          <DataField>CADG_LegacyOption</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CADG_BlindCode">
+          <DataField>CADG_BlindCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CADG_CabinetTypeCode">
+          <DataField>CADG_CabinetTypeCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CADG_PrefixCode">
+          <DataField>CADG_PrefixCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CADG_SmartPriceDuplicateCode">
+          <DataField>CADG_SmartPriceDuplicateCode</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="CADG_SmartPriceCode">
+          <DataField>CADG_SmartPriceCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CADG_EmployeeOnlyFlag">
+          <DataField>CADG_EmployeeOnlyFlag</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="CADG_MustBeDetailedFlag">
+          <DataField>CADG_MustBeDetailedFlag</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="CADG_OptionCode">
+          <DataField>CADG_OptionCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ITCH_ID">
+          <DataField>ITCH_ID</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportParameters>
+    <ReportParameter Name="Order">
+      <DataType>String</DataType>
+      <Prompt>Order</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ITEM">
+      <DataType>Integer</DataType>
+      <Prompt>ITEM</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PreReleaseID">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <DataSetReference>
+          <DataSetName>Order_X_Ref</DataSetName>
+          <ValueField>PreReleaseID</ValueField>
+        </DataSetReference>
+      </DefaultValue>
+      <Hidden>true</Hidden>
+    </ReportParameter>
+  </ReportParameters>
+  <EmbeddedImages>
+    <EmbeddedImage Name="wmlogo">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>c80f717c-b782-4a19-83fa-f98c60bf8419</rd:ReportID>
+</Report>

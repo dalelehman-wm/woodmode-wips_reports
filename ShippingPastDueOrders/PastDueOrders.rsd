@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition">
+  <Description />
+  <DataSet Name="PastDueOrders">
+    <Query>
+      <DataSourceReference>Wips_Production</DataSourceReference>
+      <DataSetParameters>
+        <DataSetParameter Name="@rush">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>false</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:DbType>Object</rd:DbType>
+        </DataSetParameter>
+        <DataSetParameter Name="@designGroup">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>false</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:DbType>Object</rd:DbType>
+        </DataSetParameter>
+        <DataSetParameter Name="@Date">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>false</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:DbType>Object</rd:DbType>
+        </DataSetParameter>
+      </DataSetParameters>
+      <CommandText>SELECT        OrderNum, [ACCT NO.], OrderType, Rush, Territory, shipyear, [SCHD DATE], ShipDate, DesignGroup, [Dealer Name], YR, SFX, [Comp Date], ShipMonth, ShipDay, 
+                         OnOrder, Shipped, InFgi, InWip, CubicVolume, ItemsOnOrder, HoldStatus
+FROM            wmvPastDueOrdersReport
+WHERE        (Rush IN (@rush)) AND (DesignGroup IN (@designGroup)) AND (ShipDate &lt;= @Date)
+ORDER BY Territory, ShipDate, OrderNum</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="OrderNum">
+        <DataField>OrderNum</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ACCT_NO_">
+        <DataField>ACCT NO.</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="OrderType">
+        <DataField>OrderType</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Rush">
+        <DataField>Rush</DataField>
+        <rd:TypeName>System.Boolean</rd:TypeName>
+      </Field>
+      <Field Name="Territory">
+        <DataField>Territory</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="shipyear">
+        <DataField>shipyear</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="SCHD_DATE">
+        <DataField>SCHD DATE</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="ShipDate">
+        <DataField>ShipDate</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="DesignGroup">
+        <DataField>DesignGroup</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Dealer_Name">
+        <DataField>Dealer Name</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="YR">
+        <DataField>YR</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="SFX">
+        <DataField>SFX</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Comp_Date">
+        <DataField>Comp Date</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="ShipMonth">
+        <DataField>ShipMonth</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="ShipDay">
+        <DataField>ShipDay</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="OnOrder">
+        <DataField>OnOrder</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="Shipped">
+        <DataField>Shipped</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="InFgi">
+        <DataField>InFgi</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="InWip">
+        <DataField>InWip</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="CubicVolume">
+        <DataField>CubicVolume</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="ItemsOnOrder">
+        <DataField>ItemsOnOrder</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="HoldStatus">
+        <DataField>HoldStatus</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

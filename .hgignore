@@ -1,0 +1,9 @@
+syntax: glob
+*/.svn
+.svn/*
+*/bin/*
+*/obj/*
+*.user
+*.orig
+*.suo
+*.data

@@ -1,0 +1,1038 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Textbox Name="Textbox3">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Truckload Number: </Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Parameters!truckloadNo.Value</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>0.02778in</Top>
+        <Left>0.12762in</Left>
+        <Height>0.25in</Height>
+        <Width>5.86811in</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Tablix Name="Tablix1">
+        <TablixBody>
+          <TablixColumns>
+            <TablixColumn>
+              <Width>0.88368in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>1.13628in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>1.13628in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>0.63982in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>0.77952in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>0.99045in</Width>
+            </TablixColumn>
+          </TablixColumns>
+          <TablixRows>
+            <TablixRow>
+              <Height>0.2425in</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox36">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox36</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox28">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Order Number</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                                <TextDecoration>Underline</TextDecoration>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox28</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox30">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Warehouse</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                                <TextDecoration>Underline</TextDecoration>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox30</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox32">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>To Load</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                                <TextDecoration>Underline</TextDecoration>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox32</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>None</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox38">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Remaining</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                                <TextDecoration>Underline</TextDecoration>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox38</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>None</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox34">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Cubic Volume</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                                <TextDecoration>Underline</TextDecoration>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox34</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>None</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+            <TablixRow>
+              <Height>0.73376in</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <CustomReportItem Name="Barcode1">
+                      <Type>Barcode</Type>
+                      <CustomData>
+                        <DataSetName>DataSet1</DataSetName>
+                        <DataColumnHierarchy>
+                          <DataMembers>
+                            <DataMember />
+                          </DataMembers>
+                        </DataColumnHierarchy>
+                        <DataRowHierarchy>
+                          <DataMembers>
+                            <DataMember />
+                          </DataMembers>
+                        </DataRowHierarchy>
+                        <DataRows>
+                          <DataRow>
+                            <DataCell>
+                              <DataValue>
+                                <Name>Text</Name>
+                                <Value />
+                              </DataValue>
+                            </DataCell>
+                          </DataRow>
+                        </DataRows>
+                      </CustomData>
+                      <ZIndex>1</ZIndex>
+                      <CustomProperties>
+                        <CustomProperty>
+                          <Name>barcode:Symbology</Name>
+                          <Value>CodeQr</Value>
+                        </CustomProperty>
+                        <CustomProperty>
+                          <Name>barcode:Scale</Name>
+                          <Value>2</Value>
+                        </CustomProperty>
+                        <CustomProperty>
+                          <Name>barcode:QrVersion</Name>
+                          <Value>2</Value>
+                        </CustomProperty>
+                        <CustomProperty>
+                          <Name>barcode:Text</Name>
+                          <Value>=Fields!WTLI_SoNum.Value</Value>
+                        </CustomProperty>
+                        <CustomProperty>
+                          <Name>barcode:QrEncodeMode</Name>
+                          <Value>0</Value>
+                        </CustomProperty>
+                        <CustomProperty>
+                          <Name>barcode:RenderVertically</Name>
+                          <Value>False</Value>
+                        </CustomProperty>
+                      </CustomProperties>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                      </Style>
+                    </CustomReportItem>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="WTLI_SoNum">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!WTLI_SoNum.Value</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>WTLI_SoNum</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="WarehousLocation">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!WarehousLocation.Value</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>WarehousLocation</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>None</Style>
+                        </Border>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="TotalItems">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!TotalItems.Value</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>TotalItems</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>None</Style>
+                        </Border>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="NotLoaded">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!NotLoaded.Value</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>NotLoaded</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>None</Style>
+                        </Border>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Volume">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!Volume.Value</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Right</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Volume</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>None</Style>
+                        </Border>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+            <TablixRow>
+              <Height>0.25in</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox41">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox41</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox42">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Items yet to be Loaded: </Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                            <TextRun>
+                              <Value>=Fields!ItemsYetToLoad.Value</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox42</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                    <ColSpan>5</ColSpan>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell />
+                <TablixCell />
+                <TablixCell />
+                <TablixCell />
+              </TablixCells>
+            </TablixRow>
+            <TablixRow>
+              <Height>0.25in</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox47">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox47</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox48">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Items not shipping: </Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                            <TextRun>
+                              <Value>=Fields!ItemsNotShipping.Value</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox48</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                    <ColSpan>5</ColSpan>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell />
+                <TablixCell />
+                <TablixCell />
+                <TablixCell />
+              </TablixCells>
+            </TablixRow>
+          </TablixRows>
+        </TablixBody>
+        <TablixColumnHierarchy>
+          <TablixMembers>
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+          </TablixMembers>
+        </TablixColumnHierarchy>
+        <TablixRowHierarchy>
+          <TablixMembers>
+            <TablixMember>
+              <KeepWithGroup>After</KeepWithGroup>
+            </TablixMember>
+            <TablixMember>
+              <Group Name="Details" />
+              <TablixMembers>
+                <TablixMember />
+                <TablixMember>
+                  <Visibility>
+                    <Hidden>=IIf(IsNothing(Fields!ItemsYetToLoad.Value), True, False)</Hidden>
+                  </Visibility>
+                </TablixMember>
+                <TablixMember>
+                  <Visibility>
+                    <Hidden>=IIf(IsNothing(Fields!ItemsNotShipping.Value), True, False)</Hidden>
+                  </Visibility>
+                </TablixMember>
+              </TablixMembers>
+            </TablixMember>
+          </TablixMembers>
+        </TablixRowHierarchy>
+        <RepeatRowHeaders>true</RepeatRowHeaders>
+        <DataSetName>DataSet1</DataSetName>
+        <Top>0.30556in</Top>
+        <Left>0.12762in</Left>
+        <Height>1.47626in</Height>
+        <Width>5.56603in</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Tablix>
+    </ReportItems>
+    <Height>1.78182in</Height>
+    <Style />
+  </Body>
+  <Width>6.49691in</Width>
+  <Page>
+    <PageHeader>
+      <Height>0.83333in</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Textbox Name="textbox1">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>Loaders Lineup</Value>
+                  <Style>
+                    <FontSize>18pt</FontSize>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>textbox1</rd:DefaultName>
+          <Left>2.35262in</Left>
+          <Height>0.37861in</Height>
+          <Width>1.79167in</Width>
+          <Style>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Image Name="Logo">
+          <Source>Embedded</Source>
+          <Value>CompanyLogo</Value>
+          <Sizing>FitProportional</Sizing>
+          <Height>0.5in</Height>
+          <Width>1.07625in</Width>
+          <ZIndex>1</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </Image>
+        <Textbox Name="Textbox783">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>Report Number: WIPS-0002</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Right</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox783</rd:DefaultName>
+          <Top>0.12861in</Top>
+          <Left>4.48184in</Left>
+          <Height>0.25in</Height>
+          <Width>2.01506in</Width>
+          <ZIndex>2</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+      </ReportItems>
+      <Style>
+        <Border>
+          <Style>None</Style>
+        </Border>
+      </Style>
+    </PageHeader>
+    <PageFooter>
+      <Height>0.79062in</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Textbox Name="Textbox1">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>Loaders Lineup</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox1</rd:DefaultName>
+          <Top>0.07396in</Top>
+          <Left>0.00262in</Left>
+          <Height>0.25in</Height>
+          <Width>1.73958in</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox2">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>=Globals!ExecutionTime</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Left</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox1</rd:DefaultName>
+          <Top>0.42604in</Top>
+          <Left>0.00262in</Left>
+          <Height>0.25in</Height>
+          <Width>1.73958in</Width>
+          <ZIndex>1</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox356">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>= "Page " &amp; Globals!PageNumber &amp; " of " &amp; Globals!TotalPages</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Right</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox356</rd:DefaultName>
+          <Top>0.07396in</Top>
+          <Left>5.24692in</Left>
+          <Height>0.25in</Height>
+          <Width>1.24999in</Width>
+          <ZIndex>2</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+      </ReportItems>
+      <Style>
+        <Border>
+          <Style>None</Style>
+        </Border>
+      </Style>
+    </PageFooter>
+    <LeftMargin>1in</LeftMargin>
+    <RightMargin>1in</RightMargin>
+    <TopMargin>1in</TopMargin>
+    <BottomMargin>1in</BottomMargin>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="vm250">
+      <DataSourceReference>vm250</DataSourceReference>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>ec461ed3-873f-42cd-a933-6848b191e771</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Query>
+        <DataSourceName>vm250</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@truckloadNo">
+            <Value>=Parameters!truckloadNo.Value</Value>
+            <rd:UserDefined>true</rd:UserDefined>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>SELECT
+	WTLI_TruckloadNo
+	, WTLI_SoNum
+	, NotLoaded
+	, TotalItems
+	, Volume
+	, WarehousLocation
+	, ItemsYetToLoad
+	, ItemsNotShipping
+FROM
+	(SELECT
+		WTLI_TruckloadNo
+		, WTLI_SoNum
+		, COUNT(CASE WHEN NOT ISNULL(WHIL_CurrentLocType, '') IN ('T')
+					AND WTLI_ShipCode = 'Y' THEN 1 END) AS NotLoaded
+		, COUNT (CASE WHEN WTLI_ShipCode = 'Y' THEN 1 END) AS TotalItems
+		, SUM(CASE WHEN WTLI_ShipCode = 'Y' THEN OrderTotals.TotalCubicVol END) AS Volume
+		, STUFF((
+			SELECT
+				', ' + CAST(WTLI_ItemNum AS VARCHAR(MAX))
+			FROM
+				WIPS_ShipTruckloadOrderItems_WTLI AS C
+			WHERE
+				C.WTLI_SoNum = B.WTLI_SoNum
+				AND (C.WTLI_ShipCode = 'S' OR C.WTLI_ShipCode = 'N')
+			FOR XML PATH('')),1,2,''
+			) AS ItemsNotShipping
+		, STUFF((
+			SELECT ', ' + CAST(WTLI_ItemNum AS VARCHAR(MAX)) +
+					'-' + ISNULL(WHIL_CurrentLocType, '?') +
+					'-' + ISNULL(WHIL_CurrentLocation, '?')
+			FROM
+				WIPS_ShipTruckloadOrderItems_WTLI AS D
+			JOIN 
+				WIPS_ItemLocation_WHIL
+					ON WTLI_SoNum = WHIL_OrderNum
+					AND WTLI_ItemNum = WHIL_ItemOnOrder
+			WHERE
+				D.WTLI_SoNum = B.WTLI_SoNum
+				AND D.WTLI_ShipCode = 'Y'
+				AND NOT ISNULL(WHIL_CurrentLocType, '') IN ('T')
+			FOR XML PATH('')),1,2,''
+			) AS ItemsYetToLoad
+	FROM
+		WIPS_ShipTruckloadOrderItems_WTLI AS B
+	JOIN
+		WIPS_ItemLocation_WHIL
+			ON WTLI_SoNum = WHIL_OrderNum
+			AND WTLI_ItemNum = WHIL_ItemOnOrder
+	JOIN
+		OrderTotals
+			ON WHIL_OrderNum = OrderTotals.OrderNum
+	WHERE
+		WTLI_TruckloadNo = @truckloadNo
+	GROUP BY
+		WTLI_TruckloadNo
+		, WTLI_ShipWeek
+		, WTLI_SoNum) AS A
+JOIN
+	OrderHeader
+		ON WTLI_SoNum = OrderHeader.OrderNum</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <Fields>
+        <Field Name="WTLI_TruckloadNo">
+          <DataField>WTLI_TruckloadNo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="WTLI_SoNum">
+          <DataField>WTLI_SoNum</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NotLoaded">
+          <DataField>NotLoaded</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="TotalItems">
+          <DataField>TotalItems</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Volume">
+          <DataField>Volume</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="WarehousLocation">
+          <DataField>WarehousLocation</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ItemsYetToLoad">
+          <DataField>ItemsYetToLoad</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ItemsNotShipping">
+          <DataField>ItemsNotShipping</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportParameters>
+    <ReportParameter Name="truckloadNo">
+      <DataType>String</DataType>
+      <Prompt>Truck Number</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <EmbeddedImages>
+    <EmbeddedImage Name="CompanyLogo">
+      <MIMEType>image/bmp</MIMEType>
+      <ImageData>Qk0GFgAAAAAAAHYAAAAoAAAAsQAAADwAAAABAAQAAAAAAAAAAADEDgAAxA4AABAAAAAQAAAAAAAA/wAAgP8AgAD/AICA/4AAAP+AAID/gIAA/4CAgP/AwMD/AAD//wD/AP8A/////wAA//8A/////wD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////w/wAA////////////////////////////////////////////////3v////////////////////////////////////////////////////////////////////D/////////////////////////////////////////////////8AAAAO//////////////////////////////////////////////////////////////////8P///////////////////////////////////////////////5AAAAAAAA/////////////////////////////////////////////////////////////////w///////////////////////////////////////////////wAAAAAAAAAO////////////////////////////////////////////////////////////////D///////////////////////////////////////////////AAAJD+kAAAAP//////////////////////////////////////////////////////////////8P//7///////////////////////////////////////////AAD/////+aAAD///////////////////////////////////////////////////
+///////////w//////////////////////////////////////////////4AD////////gAA3/////////////////////////////////////////////////////////////D/////////////////////////////////////////////+QD/////////8AAP////////////////////////////////////////////////////////////8P8AAP/////////////////////////////////////////wAP//////////0AD////////////////////////////////////////////////////////////w//////////////////////////////////////////////AJ//v/+//7//v/AA/7//v/+//7//v/+//7//v/+//7//v/+//7//v/+//7//v/+//7//////////D5////////////////8ACQAJAAkACQAJAAkACQAJAAkACQAAAAkACQAJAAkACQAJAAkACQAJAAkACQAJAAkACQAJAAkACQAJAAkACQAJAAkACQAJCf////////8J/w////////////////////////////////////////////D//////////////////////////////////////////////////////////////////////////w4An////////////////////////////+3/////+Qn///kP+Q8J///5////Ce//+f/v6f/////wCf/5/+n/+Qnv/+n/+f/5//kA7//g//8J8O//4P//////////D/kA7/////////////8O//8M//D/Dv/wDv////8A/v//D7D/vr8P//D///CfDv/+vg8K/////w7+//6/Dv/wng//Cv/6/wD//g///5D//w4A//8A//////////8P//////
+///////////wn//wn/8PkJ//AP////+Q////0P+e//+Q//8P//AP/g//ngDQn////5D////wkP//AJD/8J//DwAP/5De//AP//CQ///+D//////////w//////////////////AJ//Dv/w8P7/+g7////+D////w/+v/8Av//w//8K/7D//wD6Dv////4P////Dg//8Aq//w7//gDw//4Ov/+Q//8OsP//Cr//////////D/AAD/////////////8J//8J//AN+f/w7/////8N///9D/nv+Q/v//D//+D/AP//CfkP/////w/9///g7//w6Q//Cf/5D/D/+Q///wDv/wng//kPD/////////8P/////////////////wAP/wz/8J/+//AA//////AA//8P/r//AJ/+AA///woP//8P/w//////8JD///z///4Ov/+e//6//v/+Dp/+ng//Dp7//r+f/////////wsP4A//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////D/8P//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8PCf///////////////6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJ/////////wAAAA////////////////////////////////////////////////////////////8An///////////////////////////////////////////////////////AADv//////////////////////
+3//////////////////////////////////////+AP////////////7//////9///////5////6f////kJ//////////////8P/////////////////wD//////g///////wAO//////4AD/////8AD///Cr//////8A/////+D/////8Av////wAO/////wAO//8AD///AAAAv////////////w/wAA//////////////4O/////5Cf/////wAAAN////4AAAD///+QAA7/kACf/////5Cf////kJ/////wAJ///wAAAA////AAAN+QAAD/kAAAAJ////////////D/////////////////+QD/////wAv////5AADgAP//8AAA4AD//wAAAM8AAAD/////8A/////gD/////AAAK/5AADgAO//4AAACeAAAA/gAA/wAP//////////8PD/+f/////////////wAJ////8AAP////AAD/8AD//QAJ/+AA//AAD+AAAAkA/////wD////5AA////8AAAAJAAD/+QDv+QAJ/QAAD/kAAA///wD//////////w//D///////////////AAC////wAA7///8ADv//AA/+AA//+gCf8AAP/wAAD/4P////kJ////wAD////wAA/5AAAP//AA/+AA//8AAP/7AAD///8J//////////D///3/////////////8AAA///+AAAO///wAJ//8ADfkAD//5AA/gAA//4AAP/6n////gD///8AAJ////AAD//wAJ//8ACfkAD//5AAn/8AAP////7/////////8P/////////////////wAACv//AAAAD///AA7//wAK/gAP//8AD/AAn//+AA////////AP///wAAD///8AAL//AA7//5AA/gAP//8ADv/wAA///////////////w//////////////////AAAA///AAOkJ//8ACf//4AD5AA
+///wAJ8AAP//kAD///////8A3///AAAO///wAA//8ACf//8AD5AA///wAA//AAAO//////////////D/////////////////8AAPAP/wAA/wD//wAO///wAP4AD///AA7wAA///wAP///w///+Dv//sAAAD///AAC//wAK///wAL8AD///kAD//gAADv////////////8P8AAP/////+Dv/////wAJ+Qn/AAD/4A//AAn///AA7wAP//+gAPkAD///AAn//QAN//0A///gAOkJ///gAK//AAD///AA7wAJ///wAO/5AA8AD////////////w//8A/////8Dv//////AA7/AP8AAP/6D/8AAP//8AAPAA///5AA/gAP//8AAP/wAACf/wD//wAAvwD//5AAn/+QAP//8AAPAAr///AAD/8AD/AA////////////Dw//D////+AP//////kACf/gDwAJ//8J//AA///wAA8ACf//AAD/AA///+AA//8AAP//AP//AAD/AA//8AAP//AA7//wAA/wAP//+QAP/wAJ/wAP//////////8P/w//////AP///////gAP//4OAA7//wC/8ACf//AAD/AA//8AAP+QDv//8AD///4P//8AD/8AAP/wD//wAA///gAP//AAD/4An//+AA//8A7/8AD//////////wAACQ////AJ///////wAA///wAAD///8A8AAA//8AAP+QDv/+AA//AA///wAO///////+AP/wAA//kA//AAD///AA//8AAP/wAP//8AD//5AO/5AA//////////Dv//////kA////////AAD///kAAP////Dg6wDv/wAA//AA//AAD//wAPv/AAD///////8A//AA7//wC/+gAP///wAP/wAJ///gCeDgAO//+wDJAADv////////8P//////8AD///////4AAP///wAA////8AD/8ACQAA///5AOkACf///QAAAAAP//
+/////wD/kACf//4A/5AAn///8ACQAA7///6QAAAAn///8AAAAP/////////w///////wAP//////+QAA///7AAD////7AP//4AAA7////wAAAP/////gAAAA////////oP/gAP///wDv4ADv////8AAA7/////vgAAAP////8AAJ//////////D/AAD///AO///////wAA7///oADv////4A////kJ///////57f///////+kAD///////+QnwAA////8A7wAA///////t/////////+AA7/////////////////8P//////8A////////AAD///+QAA////8AD////////////////////////wAO///////+DvAAD////7APAAD/////////////////8ACf///////wDP///////w+f/////QDv//////8AAP///wAAAP///wAJ////////////////////////AAn///////kA4AAP////8A0AAO/////////////////wAA///////wnpD///////AP8P////AJ///////gAM////AAAAv///AAD///////////////////////8AAP///////w6QAJ//////AJAAn/////////////////4AD///////Dg4P//////8AD/////8AD//////5AA3////gAPAP//8AAO///////////////////////+AA////////AAAA7//////gAAAP////////////////+QAP///////pCe///////w/5AA///wAP//////AAD////5AM/g7//wAAD///////////////////////sACf//////8AAAD///////AAAA//////////////////AA7///////4P////////D5AAD///AA//////4AAP////8An/AP//AAAP/////////////////////w/wAA///////wAAAP///////w
+AADf//////////////8O8AAP////////////////8P///////wAP////8AAL/////wCv8AD/+wAA7/////////////////////AAAAD///////AAAO////////kAAA////////////////AAAA/////////////////w/wAA////0AD///+QAA//////8A/+AP//AACf//////////////////////AAAP6e////8AAAn////////wAAD////////////////9AAD/////////////////D////////7AAD/8AAA////////CfAA//+gAO////////////////////////kA78AA6f/gAAD/////////8AAJ//////////////////AA////////////////8PD////////QAAAAAA7////////QAAD///AAn/////////////////////////6f8AAAAAAAAP/////////+AAD////////////////////////////////////w//D////////wAAAA///////////gCf///+D///////////////////////////////DgAADv///////////54P////////////////////////////////////D/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8On////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wAAAA////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////AA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8P8AAP/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////w//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////D/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8P///w==</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <Language>en-US</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>a9726617-1c47-4e8f-993d-623519672a1a</rd:ReportID>
+</Report>
